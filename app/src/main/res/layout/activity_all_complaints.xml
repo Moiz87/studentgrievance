@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    tools:context=".AllComplaints">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+    <TableLayout
+        android:id="@+id/statustable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorPrimaryDark"
+        >
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="CID"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"
+                />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Description"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:id="@+id/tvsurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Status"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:id="@+id/tvmarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Category"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"/>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tvcstatus"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:gravity="center_horizontal"-->
+            <!--                android:text="Change Complaint Staus"-->
+            <!--                android:layout_marginBottom="1dp"-->
+            <!--                android:layout_marginRight="1dp"/>-->
+        </TableRow>
+        >
+
+
+    </TableLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tvaddcomp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:text="Get all complaints"
+        android:textColor="#2196F3"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
